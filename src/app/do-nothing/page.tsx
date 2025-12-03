@@ -37,16 +37,29 @@ export default function DoNothingPage() {
 
     // Stop if mouse moves or key is pressed
     useEffect(() => {
-        const handleActivity = () => {
-            if (isDoingNothing) {
-                stopDoingNothing();
+        let initialScrollY = window.scrollY;
+
+        const handleActivity = (e: Event) => {
+            if (!isDoingNothing) return;
+
+            // Ignore initial click/mousedown that starts the game
+            if (e.type === 'click' || e.type === 'mousedown') return;
+
+            // For scroll, only stop if scrolled significantly (prevent jitter)
+            if (e.type === 'scroll') {
+                if (Math.abs(window.scrollY - initialScrollY) < 5) return;
             }
+
+            stopDoingNothing();
         };
 
-        window.addEventListener('mousemove', handleActivity);
-        window.addEventListener('keydown', handleActivity);
-        window.addEventListener('click', handleActivity);
-        window.addEventListener('scroll', handleActivity);
+        if (isDoingNothing) {
+            initialScrollY = window.scrollY;
+            window.addEventListener('mousemove', handleActivity);
+            window.addEventListener('keydown', handleActivity);
+            window.addEventListener('click', handleActivity);
+            window.addEventListener('scroll', handleActivity);
+        }
 
         return () => {
             window.removeEventListener('mousemove', handleActivity);
@@ -54,7 +67,7 @@ export default function DoNothingPage() {
             window.removeEventListener('click', handleActivity);
             window.removeEventListener('scroll', handleActivity);
         };
-    }, [isDoingNothing, timer, highScore]);
+    }, [isDoingNothing]);
 
     const formatTime = (ms: number) => {
         const seconds = (ms / 10).toFixed(1);

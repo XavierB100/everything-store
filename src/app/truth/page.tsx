@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
 export default function TruthPage() {
+    const [scrollPixels, setScrollPixels] = useState(0);
     const [items, setItems] = useState<string[]>([]);
 
     const truths = [
@@ -24,18 +25,32 @@ export default function TruthPage() {
         "Are we there yet?",
         "404: Truth not found.",
         "Loading more existential dread...",
-        "You have scrolled 1000 pixels. Congratulations.",
+        `You have scrolled ${scrollPixels} pixels. Are you proud?`,
         "Is this art?",
-        "No, this is a div."
+        "No, this is a div.",
+        "We are all just stardust with anxiety.",
+        "Have you tried turning it off and on again?",
+        "The cake is a lie.",
+        "You are the universe experiencing itself.",
+        "This statement is false.",
+        "If you gaze long enough into the abyss, the abyss gazes also into you.",
+        "Birds are not real.",
+        "Time is a flat circle.",
+        "You are manually breathing now.",
+        "You are manually blinking now.",
+        "Your tongue is uncomfortable in your mouth."
     ];
 
     useEffect(() => {
         // Initial load
         const initialItems = Array.from({ length: 20 }, () => truths[Math.floor(Math.random() * truths.length)]);
         setItems(initialItems);
+    }, []);
 
-        // Infinite scroll handler
+    useEffect(() => {
         const handleScroll = () => {
+            setScrollPixels(Math.floor(window.scrollY));
+
             if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 100) {
                 const newItems = Array.from({ length: 10 }, () => truths[Math.floor(Math.random() * truths.length)]);
                 setItems(prev => [...prev, ...newItems]);

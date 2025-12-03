@@ -60,14 +60,15 @@ export default function CheckoutPage() {
                                 <div className="pt-6">
                                     <Button fullWidth size="lg" onClick={async (e) => {
                                         e.preventDefault();
-                                        const res = await fetch('/api/orders', {
-                                            method: 'POST',
-                                            body: JSON.stringify({ items, total }),
-                                        });
-                                        if (res.ok) {
-                                            alert('ORDER PLACED. YOU NOW OWN EVERYTHING (THAT YOU BOUGHT).');
-                                            window.location.href = '/';
-                                        }
+                                        // Simulate processing
+                                        const btn = e.currentTarget;
+                                        const originalText = btn.innerText;
+                                        btn.innerText = "PROCESSING...";
+
+                                        await new Promise(resolve => setTimeout(resolve, 2000));
+
+                                        alert('ORDER PLACED. YOU NOW OWN EVERYTHING (THAT YOU BOUGHT).');
+                                        window.location.href = '/everything-store';
                                     }}>PAY ${total}</Button>
                                 </div>
                             </form>

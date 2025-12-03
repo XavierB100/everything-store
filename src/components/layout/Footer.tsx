@@ -30,7 +30,7 @@ export default function Footer() {
                     <div>
                         <h3 className="font-display text-lg mb-4">SUPPORT</h3>
                         <ul className="space-y-2">
-                            <li><Link href="/support#faq" className="text-sm text-gray-500 hover:text-foreground">HELP CENTER</Link></li>
+
                             <li><Link href="/support#contact" className="text-sm text-gray-500 hover:text-foreground">CONTACT US</Link></li>
                             <li><Link href="/warranty" className="text-sm text-gray-500 hover:text-foreground">WARRANTY</Link></li>
                             <li><Link href="/status" className="text-sm text-gray-500 hover:text-foreground">SYSTEM STATUS</Link></li>

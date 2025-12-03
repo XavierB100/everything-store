@@ -1,9 +1,32 @@
+'use client';
+
 import Button from '../ui/Button';
 import Image from 'next/image';
 import ScrollReveal from '../ui/ScrollReveal';
+import { useCart } from '@/context/CartContext';
+import { products } from '@/lib/products';
 import { getImagePath } from '@/lib/utils';
 
 export default function Hero() {
+    const { addToCart } = useCart();
+
+    const handleBuyNow = () => {
+        const phone1 = products.find(p => p.slug === 'phone-1');
+        if (phone1) {
+            addToCart({
+                id: phone1.id,
+                slug: phone1.slug,
+                title: phone1.title,
+                price: phone1.price,
+                description: phone1.description,
+                features: phone1.features,
+                specs: phone1.specs,
+                images: phone1.images
+            });
+            window.alert("ADDED TO CART. YOU'RE WELCOME.");
+        }
+    };
+
     return (
         <section className="relative h-[85vh] w-full flex items-center justify-center overflow-hidden bg-black text-white">
             {/* Background Image */}
@@ -34,10 +57,10 @@ export default function Hero() {
                 </ScrollReveal>
                 <ScrollReveal width="100%" delay={0.4}>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button variant="primary" size="lg" className="bg-white text-black hover:bg-gray-200 border-none">
+                        <Button variant="primary" size="lg" className="bg-white text-black hover:bg-gray-200 border-none" onClick={() => window.location.href = '/everything-store/products/phone-1'}>
                             LEARN MORE
                         </Button>
-                        <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                        <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black" onClick={handleBuyNow}>
                             BUY NOW
                         </Button>
                     </div>

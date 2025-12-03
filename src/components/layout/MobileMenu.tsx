@@ -30,7 +30,7 @@ export default function MobileMenu() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="fixed inset-0 z-40 bg-background pt-20 px-4"
+                        className="fixed inset-0 z-[100] h-screen w-screen bg-black text-white flex flex-col items-center justify-center"
                     >
                         <button onClick={toggleMenu} className="absolute top-4 right-4 p-2 hover:text-accent transition-colors">
                             <X size={24} />

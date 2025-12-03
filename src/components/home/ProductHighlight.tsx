@@ -1,3 +1,5 @@
+'use client';
+
 import ProductCard from '../ui/ProductCard';
 import ScrollReveal from '../ui/ScrollReveal';
 
@@ -19,12 +21,14 @@ export default function ProductHighlight() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {featuredProducts.map((product, index) => (
                         <ScrollReveal key={product.id} width="100%" delay={index * 0.1}>
-                            <ProductCard
-                                title={product.title}
-                                price={`$${product.price}`}
-                                image={product.images[0] || ''}
-                                href={`/products/${product.slug}`}
-                            />
+                            <div onClick={() => window.location.href = `/everything-store/products/${product.slug}`} className="cursor-pointer">
+                                <ProductCard
+                                    title={product.title}
+                                    price={`$${product.price}`}
+                                    image={product.images[0] || ''}
+                                    href={`/products/${product.slug}`}
+                                />
+                            </div>
                         </ScrollReveal>
                     ))}
                 </div>
