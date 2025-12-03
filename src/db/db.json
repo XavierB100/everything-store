@@ -1,0 +1,317 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "slug": "phone-1",
+            "title": "PHONE (1)",
+            "price": 499,
+            "description": "Designed with instinct, to bring joy back to the everyday. Through the Glyph Interface, a perfected OS and exceptional dual camera. All startlingly fast.",
+            "features": [
+                "Glyph Interface",
+                "50 MP dual camera",
+                "Nothing OS",
+                "120Hz OLED display",
+                "Snapdragon™ 778G+"
+            ],
+            "specs": [
+                {
+                    "label": "Dimensions",
+                    "value": "159.2 x 75.8 x 8.3 mm"
+                },
+                {
+                    "label": "Weight",
+                    "value": "193.5 g"
+                },
+                {
+                    "label": "Screen",
+                    "value": "6.55” flexible OLED"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Qualcomm Snapdragon 778G+"
+                }
+            ],
+            "images": [
+                "/hero-phone.png"
+            ]
+        },
+        {
+            "id": "2",
+            "slug": "ear-1",
+            "title": "EAR (1)",
+            "price": 99,
+            "description": "Ultra light at 4.7g. Powerful 11.6mm speaker driver. Sound by Teenage Engineering. Active Noise Cancellation. Up to 34 hours of listening.",
+            "features": [
+                "Ultra light at 4.7g",
+                "Powerful 11.6mm speaker driver",
+                "Sound by Teenage Engineering",
+                "Active Noise Cancellation"
+            ],
+            "specs": [
+                {
+                    "label": "Dimensions",
+                    "value": "28.9 x 21.5 x 23.5 mm"
+                },
+                {
+                    "label": "Weight",
+                    "value": "4.7 g"
+                },
+                {
+                    "label": "Driver",
+                    "value": "11.6 mm dynamic"
+                },
+                {
+                    "label": "Battery",
+                    "value": "Up to 34 hours"
+                }
+            ],
+            "images": [
+                "/ear-1.png"
+            ]
+        },
+        {
+            "id": "3",
+            "slug": "ear-stick",
+            "title": "EAR (STICK)",
+            "price": 99,
+            "description": "Tech you can’t feel. Custom 12.6 mm dynamic driver. Clear Voice Technology. Press controls. Up to 29 hrs of listening time.",
+            "features": [
+                "Feather-light at 4.4g",
+                "Custom 12.6 mm dynamic driver",
+                "Clear Voice Technology",
+                "Press controls"
+            ],
+            "specs": [
+                {
+                    "label": "Dimensions",
+                    "value": "29.8 x 18.8 x 18.4 mm"
+                },
+                {
+                    "label": "Weight",
+                    "value": "4.4 g"
+                },
+                {
+                    "label": "Driver",
+                    "value": "12.6 mm dynamic"
+                },
+                {
+                    "label": "Battery",
+                    "value": "Up to 29 hours"
+                }
+            ],
+            "images": [
+                "/ear-stick.png"
+            ]
+        },
+        {
+            "id": "4",
+            "slug": "phone-2",
+            "title": "PHONE (2)",
+            "price": 599,
+            "description": "New Glyph Interface. 50 MP dual rear camera + 32 MP front camera. 6.7” LTPO OLED display. Snapdragon® 8+ Gen 1.",
+            "features": [
+                "New Glyph Interface",
+                "50 MP dual rear camera",
+                "32 MP front camera",
+                "Snapdragon® 8+ Gen 1"
+            ],
+            "specs": [
+                {
+                    "label": "Dimensions",
+                    "value": "162.1 x 76.4 x 8.6 mm"
+                },
+                {
+                    "label": "Weight",
+                    "value": "201.2 g"
+                },
+                {
+                    "label": "Screen",
+                    "value": "6.7” LTPO OLED"
+                },
+                {
+                    "label": "Processor",
+                    "value": "Snapdragon® 8+ Gen 1"
+                }
+            ],
+            "images": [
+                "/phone-2.png"
+            ]
+        },
+        {
+            "id": "5",
+            "slug": "everything-water",
+            "title": "EVERYTHING WATER",
+            "price": 29,
+            "description": "It's just water. But it's Everything. Sourced from the tears of our competitors. pH balanced for maximum hydration and ego.",
+            "features": [
+                "100% H2O",
+                "Transparent Bottle",
+                "Wet",
+                "Drinkable"
+            ],
+            "specs": [
+                {
+                    "label": "Volume",
+                    "value": "500 ml"
+                },
+                {
+                    "label": "pH",
+                    "value": "7.0"
+                },
+                {
+                    "label": "Source",
+                    "value": "Unknown"
+                },
+                {
+                    "label": "Container",
+                    "value": "Glass"
+                }
+            ],
+            "images": []
+        },
+        {
+            "id": "6",
+            "slug": "everything-air",
+            "title": "EVERYTHING AIR",
+            "price": 0,
+            "description": "The ultimate minimalist product. You can't see it, but you need it. Packaged in a vacuum-sealed jar for freshness.",
+            "features": [
+                "Invisible",
+                "Weightless",
+                "Essential for Life",
+                "Free (Shipping $50)"
+            ],
+            "specs": [
+                {
+                    "label": "Composition",
+                    "value": "78% Nitrogen, 21% Oxygen"
+                },
+                {
+                    "label": "Weight",
+                    "value": "0 g"
+                },
+                {
+                    "label": "Volume",
+                    "value": "1 L"
+                },
+                {
+                    "label": "Expiry",
+                    "value": "Never"
+                }
+            ],
+            "images": []
+        },
+        {
+            "id": "7",
+            "slug": "everything-rock",
+            "title": "EVERYTHING ROCK",
+            "price": 19,
+            "description": "It does nothing. It is a rock. But it is an Everything Rock. Compatible with gravity.",
+            "features": [
+                "Solid state",
+                "Wireless",
+                "No battery required",
+                "Heavy"
+            ],
+            "specs": [
+                {
+                    "label": "Material",
+                    "value": "Stone"
+                },
+                {
+                    "label": "Weight",
+                    "value": "0.5 kg"
+                },
+                {
+                    "label": "Connectivity",
+                    "value": "None"
+                },
+                {
+                    "label": "OS",
+                    "value": "RockOS 1.0"
+                }
+            ],
+            "images": []
+        },
+        {
+            "id": "8",
+            "slug": "everything-nothing",
+            "title": "EVERYTHING NOTHING",
+            "price": 999,
+            "description": "We removed everything. The screen, the battery, the case. You get literally nothing. The ultimate status symbol.",
+            "features": [
+                "0g Weight",
+                "Infinite Battery Life (because it doesn't exist)",
+                "100% Transparent",
+                "Expensive"
+            ],
+            "specs": [
+                {
+                    "label": "Existence",
+                    "value": "No"
+                },
+                {
+                    "label": "Dimensions",
+                    "value": "0 x 0 x 0 mm"
+                },
+                {
+                    "label": "Warranty",
+                    "value": "Void"
+                }
+            ],
+            "images": []
+        }
+    ],
+    "posts": [
+        {
+            "id": "1",
+            "slug": "why-everything",
+            "title": "Why Everything?",
+            "date": "2023-10-27",
+            "excerpt": "In a world of nothing, we chose everything. Here is why.",
+            "content": "We looked at the market and saw a void. A void of minimalism that had gone too far. People were buying phones that did nothing. Earbuds that played nothing. We decided to change that. We decided to give people EVERYTHING. Every feature, every pixel, every possible atom of technology crammed into a single device. Because you deserve it all."
+        },
+        {
+            "id": "2",
+            "slug": "the-dot-matrix-revolution",
+            "title": "The Dot Matrix Revolution",
+            "date": "2023-11-15",
+            "excerpt": "Why we chose the most legible font in history.",
+            "content": "Dots. They are the building blocks of the universe. Atoms are dots. Planets are dots (from far away). So why shouldn't our font be dots? It's not just a stylistic choice; it's a philosophical one. By breaking down language into points, we remind you that everything is connected, yet distinct. Also, it looks cool."
+        },
+        {
+            "id": "3",
+            "slug": "water-is-wet",
+            "title": "Water is Wet. Discuss.",
+            "date": "2023-12-01",
+            "excerpt": "A deep dive into the moisture of our new product.",
+            "content": "We released Everything Water. People asked, 'Is it wet?' We convened a board meeting. We hired scientists. We touched it. The conclusion? Yes. It is wet. But is it *too* wet? That is for you to decide. Experience hydration like never before. It's not just water; it's liquid existence."
+        },
+        {
+            "id": "4",
+            "slug": "why-we-hate-colors",
+            "title": "Why We Hate Colors",
+            "date": "2023-12-10",
+            "excerpt": "Red is okay. Everything else is a distraction.",
+            "content": "Look around you. The world is chaotic. Too many colors. Blue, Green, Yellow. Disgusting. We believe in purity. Black. White. And Red (because it looks dangerous). By removing color, we remove distraction. We allow you to focus on the form, the function, the nothingness. You're welcome."
+        },
+        {
+            "id": "5",
+            "slug": "the-art-of-doing-nothing",
+            "title": "The Art of Doing Nothing",
+            "excerpt": "Productivity is overrated. We explore the benefits of staring at a wall for 8 hours.",
+            "content": "In a world that demands constant output, we propose a radical alternative: zero output. Our new 'Everything Nothing' product is the embodiment of this philosophy. It doesn't do anything, so you don't have to either.",
+            "date": "2024-04-01",
+            "author": "Zen Master"
+        },
+        {
+            "id": "6",
+            "slug": "why-squares-are-better",
+            "title": "Why Squares Are Better Than Circles",
+            "excerpt": "Circles are pointless. Squares have four points. The math is simple.",
+            "content": "We have redesigned the wheel. It is now square. It is less efficient, but it looks much better in a grid layout. Form over function. Always.",
+            "date": "2024-05-15",
+            "author": "Geometry Fan"
+        }
+    ]
+}
