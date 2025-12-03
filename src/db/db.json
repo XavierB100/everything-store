@@ -167,7 +167,9 @@
                     "value": "Glass"
                 }
             ],
-            "images": []
+            "images": [
+                "/everything-water.png"
+            ]
         },
         {
             "id": "6",
@@ -199,7 +201,9 @@
                     "value": "Never"
                 }
             ],
-            "images": []
+            "images": [
+                "/everything-air.png"
+            ]
         },
         {
             "id": "7",
@@ -231,7 +235,9 @@
                     "value": "RockOS 1.0"
                 }
             ],
-            "images": []
+            "images": [
+                "/everything-pet.png"
+            ]
         },
         {
             "id": "8",
@@ -259,7 +265,9 @@
                     "value": "Void"
                 }
             ],
-            "images": []
+            "images": [
+                "/everything-nothing.png"
+            ]
         },
         {
             "id": "9",
@@ -287,7 +295,9 @@
                     "value": "215 x 102.5 x 65 mm"
                 }
             ],
-            "images": []
+            "images": [
+                "/everything-brick.png"
+            ]
         },
         {
             "id": "10",
@@ -315,7 +325,9 @@
                     "value": "No"
                 }
             ],
-            "images": []
+            "images": [
+                "/everything-suit.png"
+            ]
         }
     ],
     "posts": [
