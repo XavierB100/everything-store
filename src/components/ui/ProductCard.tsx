@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
+import { getImagePath } from '@/lib/utils';
 
 interface ProductCardProps {
     title: string;
@@ -19,7 +20,7 @@ export default function ProductCard({ title, price, image, href }: ProductCardPr
                 </div>
                 {image && (
                     <Image
-                        src={image}
+                        src={getImagePath(image)}
                         alt={title}
                         fill
                         className="object-contain transition-transform duration-500 group-hover:scale-105"

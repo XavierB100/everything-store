@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import AddToCartButton from '@/components/products/AddToCartButton';
 import ScrollReveal from '@/components/ui/ScrollReveal';
+import { getImagePath } from '@/lib/utils';
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -32,7 +33,7 @@ export default async function ProductPage({ params }: PageProps) {
                         <div className="relative aspect-square bg-surface rounded-3xl overflow-hidden flex items-center justify-center">
                             {product.images.length > 0 ? (
                                 <Image
-                                    src={product.images[0]}
+                                    src={getImagePath(product.images[0])}
                                     alt={product.title}
                                     fill
                                     className="object-contain p-12"

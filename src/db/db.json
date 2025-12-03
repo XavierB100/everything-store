@@ -204,7 +204,7 @@
         {
             "id": "7",
             "slug": "everything-rock",
-            "title": "EVERYTHING ROCK",
+            "title": "EVERYTHING PET",
             "price": 19,
             "description": "It does nothing. It is a rock. But it is an Everything Rock. Compatible with gravity.",
             "features": [
@@ -260,6 +260,62 @@
                 }
             ],
             "images": []
+        },
+        {
+            "id": "9",
+            "slug": "everything-brick",
+            "title": "EVERYTHING BRICK",
+            "price": 50,
+            "description": "It's a brick. Red. Heavy. Useful for building things or holding doors open. The foundation of civilization, now in your pocket (if you have big pockets).",
+            "features": [
+                "Red",
+                "Heavy",
+                "Rectangular",
+                "Compatible with mortar"
+            ],
+            "specs": [
+                {
+                    "label": "Material",
+                    "value": "Clay"
+                },
+                {
+                    "label": "Weight",
+                    "value": "2.3 kg"
+                },
+                {
+                    "label": "Dimensions",
+                    "value": "215 x 102.5 x 65 mm"
+                }
+            ],
+            "images": []
+        },
+        {
+            "id": "10",
+            "slug": "everything-suit",
+            "title": "EVERYTHING SUIT",
+            "price": 2999,
+            "description": "A onesie made entirely of fiber optic cables. Light up the room, literally. Warning: Do not bend knees more than 45 degrees.",
+            "features": [
+                "RGB Lighting",
+                "10Gbps Bandwidth",
+                "Uncomfortable",
+                "Warm"
+            ],
+            "specs": [
+                {
+                    "label": "Material",
+                    "value": "Glass Fiber"
+                },
+                {
+                    "label": "Connectivity",
+                    "value": "Ethernet"
+                },
+                {
+                    "label": "Washable",
+                    "value": "No"
+                }
+            ],
+            "images": []
         }
     ],
     "posts": [
@@ -312,6 +368,33 @@
             "content": "We have redesigned the wheel. It is now square. It is less efficient, but it looks much better in a grid layout. Form over function. Always.",
             "date": "2024-05-15",
             "author": "Geometry Fan"
+        },
+        {
+            "id": "7",
+            "slug": "history-of-the-circle",
+            "title": "The History of the Circle",
+            "excerpt": "A 5,000-word essay on why we abandoned it.",
+            "content": "The circle. A shape with no beginning and no end. Sounds exhausting, right? We prefer shapes that end. Like lines. And squares. We traced the history of the circle from the invention of the wheel to the invention of the donut. Our conclusion? It's round. And we don't like it.",
+            "date": "2024-06-01",
+            "author": "Shape Historian"
+        },
+        {
+            "id": "8",
+            "slug": "we-bought-a-planet",
+            "title": "We Bought a Planet",
+            "excerpt": "Announcing the acquisition of Mars (pending regulatory approval).",
+            "content": "We needed more space for our warehouses. So we bought a planet. It's red, which fits our brand. We plan to turn it into the world's largest distribution center. Shipping times may vary (6-8 months).",
+            "date": "2024-06-15",
+            "author": "Elon M. (Not that one)"
+        },
+        {
+            "id": "9",
+            "slug": "interview-with-a-pixel",
+            "title": "Interview with a Pixel",
+            "excerpt": "We sat down with a single pixel to ask it about its life purpose.",
+            "content": "Interviewer: So, you're a pixel. What do you do?\n\nPixel: I turn on. I turn off. Sometimes I'm red. Sometimes I'm blue. Mostly I just wait for the user to scroll past me.\n\nInterviewer: Do you feel important?\n\nPixel: I am 1/2,073,600th of a 1080p screen. Without me, the image is incomplete. But with me, nobody notices. It is a lonely existence. But it is honest work.",
+            "date": "2024-07-01",
+            "author": "Tech Journalist"
         }
     ]
 }

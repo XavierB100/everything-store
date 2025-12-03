@@ -15,6 +15,8 @@ interface Product {
     images: string[];
 }
 
+import db from '@/db/db.json';
+
 export default function BuyEverythingButton() {
     const { addToCart } = useCart();
     const [loading, setLoading] = useState(false);
@@ -22,8 +24,10 @@ export default function BuyEverythingButton() {
     const handleBuyEverything = async () => {
         setLoading(true);
         try {
-            const res = await fetch('/api/products');
-            const products: Product[] = await res.json();
+            // Simulate network delay for dramatic effect
+            await new Promise(resolve => setTimeout(resolve, 1000));
+
+            const products = (db as any).products as Product[];
 
             products.forEach(product => {
                 addToCart({

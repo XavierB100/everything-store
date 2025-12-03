@@ -1,7 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-
-const dbPath = path.join(process.cwd(), 'src/db/db.json');
+import db from '@/db/db.json';
 
 export interface Product {
     id: string;
@@ -29,8 +26,7 @@ export interface Database {
 }
 
 export function getDb(): Database {
-    const fileContents = fs.readFileSync(dbPath, 'utf8');
-    return JSON.parse(fileContents);
+    return db as Database;
 }
 
 export function getProducts(): Product[] {

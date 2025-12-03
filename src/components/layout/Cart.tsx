@@ -7,6 +7,8 @@ import Button from '../ui/Button';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { getImagePath } from '@/lib/utils';
+
 export default function Cart() {
     const { items, isOpen, toggleCart, removeFromCart, total } = useCart();
 
@@ -49,7 +51,7 @@ export default function Cart() {
                                     <div key={item.id} className="flex gap-4">
                                         <div className="relative w-24 h-24 bg-surface rounded-xl flex items-center justify-center shrink-0">
                                             {item.images[0] ? (
-                                                <Image src={item.images[0]} alt={item.title} fill className="object-contain p-2" />
+                                                <Image src={getImagePath(item.images[0])} alt={item.title} fill className="object-contain p-2" />
                                             ) : (
                                                 <span className="font-display text-2xl text-gray-300">{item.title[0]}</span>
                                             )}

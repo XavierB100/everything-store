@@ -6,13 +6,14 @@ export default function Footer() {
     return (
         <footer className="bg-background border-t border-surface py-12 md:py-20">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
                     <div>
                         <h3 className="font-display text-lg mb-4">SHOP</h3>
                         <ul className="space-y-2">
                             <li><Link href="/products" className="text-sm text-gray-500 hover:text-foreground">ALL PRODUCTS</Link></li>
                             <li><Link href="/products/phone-2" className="text-sm text-gray-500 hover:text-foreground">PHONE (2)</Link></li>
                             <li><Link href="/products/ear-stick" className="text-sm text-gray-500 hover:text-foreground">EAR (STICK)</Link></li>
+                            <li><Link href="/products/everything-pet" className="text-sm text-gray-500 hover:text-foreground">EVERYTHING PET</Link></li>
                             <li><Link href="/products/everything-nothing" className="text-sm text-gray-500 hover:text-foreground">NOTHING</Link></li>
                         </ul>
                     </div>
@@ -33,7 +34,15 @@ export default function Footer() {
                             <li><Link href="/support#contact" className="text-sm text-gray-500 hover:text-foreground">CONTACT US</Link></li>
                             <li><Link href="/warranty" className="text-sm text-gray-500 hover:text-foreground">WARRANTY</Link></li>
                             <li><Link href="/status" className="text-sm text-gray-500 hover:text-foreground">SYSTEM STATUS</Link></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 className="font-display text-lg mb-4">COMMUNITY</h3>
+                        <ul className="space-y-2">
                             <li><Link href="/community" className="text-sm text-gray-500 hover:text-foreground">COMMUNITY</Link></li>
+                            <li><Link href="/journal" className="text-sm text-gray-500 hover:text-foreground">JOURNAL</Link></li>
+                            <li><Link href="/do-nothing" className="text-sm text-gray-500 hover:text-foreground">DO NOTHING</Link></li>
+                            <li><Link href="/truth" className="text-sm text-gray-500 hover:text-foreground">THE TRUTH</Link></li>
                         </ul>
                     </div>
                     <div>

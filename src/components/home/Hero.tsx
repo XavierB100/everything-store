@@ -1,6 +1,7 @@
 import Button from '../ui/Button';
 import Image from 'next/image';
 import ScrollReveal from '../ui/ScrollReveal';
+import { getImagePath } from '@/lib/utils';
 
 export default function Hero() {
     return (
@@ -8,7 +9,7 @@ export default function Hero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0 opacity-80">
                 <Image
-                    src="/hero-phone.png"
+                    src={getImagePath('/hero-phone.png')}
                     alt="Everything Phone (1)"
                     fill
                     className="object-cover object-center"
