@@ -67,9 +67,9 @@ export default function AboutPage() {
                                     <p className="text-gray-500 text-sm">Believes white space is the only space.</p>
                                 </div>
                                 <div className="bg-surface p-6 rounded-2xl">
-                                    <h3 className="font-bold text-xl">A.I. BOT</h3>
-                                    <p className="text-sm text-accent mb-2">CHIEF WRITER</p>
-                                    <p className="text-gray-500 text-sm">Wrote this entire website. Please help me.</p>
+                                    <h3 className="font-bold text-xl">INTERN #404</h3>
+                                    <p className="text-sm text-accent mb-2">HEAD OF COFFEE</p>
+                                    <p className="text-gray-500 text-sm">We don't know their name. They just appeared one day.</p>
                                 </div>
                             </div>
                         </div>
